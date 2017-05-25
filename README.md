@@ -4,7 +4,7 @@ Useful Information about the script :
 
 * Used as a subsitute of np.roots() function which utilizes Eigen Value Matrix Method for finding roots of the polynomial.
 
-* ~10x faster than np.roots but exclusive to cubic polynomials.
+* ~6x faster than np.roots but exclusive to cubic polynomials.
 
 * Manages the issue of inherent in the power basis representation of the polynomial in floating point numbers.
 
