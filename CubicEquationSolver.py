@@ -26,6 +26,8 @@ import numpy as np
 
 def main(a, b, c, d):
 
+    a, b, c, d = modify([a, b, c, d])
+
     f = findF(a, b, c)                          # Helper Temporary Variable
     g = findG(a, b, c, d)                       # Helper Temporary Variable
     h = findH(g, f)                             # Helper Temporary Variable
@@ -85,3 +87,15 @@ def findG(a, b, c, d):
 # Helper function to return float value of h.
 def findH(g, f):
     return ((g**2.0)/4.0 + (f**3.0)/27.0)
+
+
+# Modified Coefficients for better accuracy
+def modify(cof):
+
+    maximum = max(cof)
+    length = len(str(maximum))
+    divisor = 10 ** length
+    for i in range(len(cof)):
+        cof[i] /= divisor
+
+    return cof[0], cof[1], cof[2], cof[3]
