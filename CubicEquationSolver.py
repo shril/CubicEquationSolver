@@ -24,7 +24,7 @@ import numpy as np
 # as parameters and it returns the roots in form of numpy array.
 # Polynomial Structure -> ax^3 + bx^2 + cx + d = 0
 
-def solve(a, b, c, d):8=
+def solve(a, b, c, d):
 
     f = findF(a, b, c)                          # Helper Temporary Variable
     g = findG(a, b, c, d)                       # Helper Temporary Variable
@@ -39,7 +39,7 @@ def solve(a, b, c, d):8=
 
     elif h <= 0:                                # All 3 roots are Real
 
-        i = math.sqrt(((g ** 2) / 4) - h)         # Helper Temporary Variable
+        i = math.sqrt(((g ** 2.0) / 4.0) - h)         # Helper Temporary Variable
         j = i ** (1 / 3.0)                      # Helper Temporary Variable
         k = math.acos(-(g / (2 * i)))             # Helper Temporary Variable
         L = j * -1                              # Helper Temporary Variable
@@ -47,7 +47,7 @@ def solve(a, b, c, d):8=
         N = math.sqrt(3) * math.sin(k / 3.0)    # Helper Temporary Variable
         P = (b / (3.0 * a)) * -1            # Helper Temporary Variable
 
-        x1 = 2 * j * math.cos(k / 3.0) - (b / a)*(1 / 3.0)
+        x1 = 2 * j * math.cos(k / 3.0) - (b / (3.0 * a))
         x2 = L * (M + N) + P
         x3 = L * (M - N) + P
 
