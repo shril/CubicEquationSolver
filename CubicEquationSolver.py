@@ -27,19 +27,19 @@ import numpy as np
 def solve(a, b, c, d):
 
     if (a == 0 and b == 0):                     # Case for handling Liner Equation
-        return np.array([-d/c])                 # Returning linear root as numpy array.
+        return np.array([(-d * 1.0) / c])                 # Returning linear root as numpy array.
 
     elif (a == 0):                              # Case for handling Quadratic Equations
 
-        D = c*c - 4.0*b*d                       # Helper Temporary Variable
-        if D>=0:
+        D = c * c - 4.0 * b * d                       # Helper Temporary Variable
+        if D >= 0:
             D = math.sqrt(D)
             x1 = (-c + D) / (2.0 * b)
             x2 = (-c - D) / (2.0 * b)
         else:
             D = math.sqrt(-D)
-            x1 = (-c + D.j) / (2.0 * b)
-            x2 = (-c - D.j) / (2.0 * b)
+            x1 = (-c + D * 1j) / (2.0 * b)
+            x2 = (-c - D * 1j) / (2.0 * b)
             
         return np.array([x1, x2])               # Returning Quadratic Roots as numpy array.
 
@@ -49,9 +49,9 @@ def solve(a, b, c, d):
 
     if f == 0 and g == 0 and h == 0:            # All 3 Roots are Real and Equal
         if (d / a) >= 0:
-            x = (d / a) ** (1 / 3.0) * -1
+            x = (d / (1.0 * a)) ** (1 / 3.0) * -1
         else:
-            x = (-d / a) ** (1 / 3.0)
+            x = (-d / (1.0 * a)) ** (1 / 3.0)
         return np.array([x, x, x])              # Returning Equal Roots as numpy array.
 
     elif h <= 0:                                # All 3 roots are Real
