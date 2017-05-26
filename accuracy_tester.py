@@ -5,15 +5,16 @@ import timeit
 
 
 
-no_of_iterations = 1000000
+no_of_iterations = 100000
 
 store = []
 
 for i in range(no_of_iterations):
-	a = randint(-10000, 10000)
+	#a = randint(-10000, 10000)
 	b = randint(-10000, 10000)
 	c = randint(-10000, 10000)
 	d = randint(-10000, 10000)
+	a = 0
 	store.append([a, b, c, d])
 
 start = timeit.default_timer()
@@ -27,7 +28,7 @@ for i in range(no_of_iterations):
                         if str(r1.real) == str(r2.real) and str(r1.imag) == str(r2.imag): ct+=1
 
         #if ct == 3: print "Correct!"
-        if ct > 3: print "Anomaly! roots are ->\nOld root -> ",old_root,"\nnew_root -> ",new_root
-        elif ct < 3: print "Might be wrong !\nOld root -> ",old_root,"\nnew_root -> ",fast_root
+        if ct > 2: print "Anomaly! roots are ->\nOld root -> ",old_root,"\nnew_root -> ",new_root
+        elif ct < 2: print "Might be wrong !\nOld root -> ",old_root,"\nnew_root -> ",fast_root
                 
 
