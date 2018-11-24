@@ -1,24 +1,22 @@
-'''
 
-CUBIC ROOT SOLVER
+# CUBIC ROOT SOLVER
 
-Date Created   :    24.05.2017
-Created by     :    Shril Kumar [(shril.iitdhn@gmail.com),(github.com/shril)] &
-                    Devojoyti Halder [(devjyoti.itachi@gmail.com),(github.com/devojoyti)]
+# Date Created   :    24.05.2017
+# Created by     :    Shril Kumar [(shril.iitdhn@gmail.com),(github.com/shril)] &
+#                     Devojoyti Halder [(devjyoti.itachi@gmail.com),(github.com/devojoyti)]
 
-Project        :    Classified 
-Use Case       :    Instead of using standard numpy.roots() method for finding roots,
-                    we have implemented our own algorithm which is ~10x faster than
-                    in-built method.
+# Project        :    Classified 
+# Use Case       :    Instead of using standard numpy.roots() method for finding roots,
+#                     we have implemented our own algorithm which is ~10x faster than
+#                     in-built method.
 
-Algorithm Link :    www.1728.org/cubic2.htm
+# Algorithm Link :    www.1728.org/cubic2.htm
 
-This script (Cubic Equation Solver) is an indipendent program for computation of cubic equations. This script, however, has no
-relation with original project code or calculations. It is to be also made clear that no knowledge of it's original project 
-is included or used to device this script. This script is complete freeware developed by above signed users, and may furthur be
-used or modified for commercial or non - commercial purpose.
+# This script (Cubic Equation Solver) is an indipendent program for computation of cubic equations. This script, however, has no
+# relation with original project code or calculations. It is to be also made clear that no knowledge of it's original project 
+# is included or used to device this script. This script is complete freeware developed by above signed users, and may furthur be
+# used or modified for commercial or non - commercial purpose.
 
-'''
 
 
 # Libraries imported for fast mathematical computations.
