@@ -1,4 +1,3 @@
-
 # CUBIC ROOT SOLVER
 
 # Date Created   :    24.05.2017
@@ -16,7 +15,6 @@
 # relation with original project code or calculations. It is to be also made clear that no knowledge of it's original project 
 # is included or used to device this script. This script is complete freeware developed by above signed users, and may furthur be
 # used or modified for commercial or non - commercial purpose.
-
 
 
 # Libraries imported for fast mathematical computations.
