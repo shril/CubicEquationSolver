@@ -11,10 +11,10 @@
 
 # Algorithm Link :    www.1728.org/cubic2.htm
 
-# This script (Cubic Equation Solver) is an indipendent program for computation of cubic equations. This script, however, has no
-# relation with original project code or calculations. It is to be also made clear that no knowledge of it's original project 
-# is included or used to device this script. This script is complete freeware developed by above signed users, and may furthur be
-# used or modified for commercial or non - commercial purpose.
+# This script (Cubic Equation Solver) is an independent program for computation of roots of Cubic Polynomials. This script, however,
+# has no relation with original project code or calculations. It is to be also made clear that no knowledge of it's original project 
+# is included or used to device this script. This script is complete freeware developed by above signed users, and may further be
+# used or modified for commercial or non-commercial purpose.
 
 
 # Libraries imported for fast mathematical computations.
